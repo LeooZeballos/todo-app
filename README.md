@@ -1,1 +1,2 @@
-# TO-DO App - ReactJS
+# TODO App - ReactJS
+By Leonel Zeballos
