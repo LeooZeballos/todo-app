@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+
+const todos = [
+  { text: 'Hacer curso de React', completed: false },
+  { text: 'Estudiar React', completed: false },
+  { text: 'Comer', completed: false },
+  { text: 'Dormir', completed: false },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Platzi
-        </a>
-      </header>
+    <div>
+      <TodoCounter />
+      <h2>Has completado 2 de 5 TODOs</h2>
+      <TodoSearch />
+      <input placeholder="Buscar..." />
+      <TodoList>
+        {todos.map(todo => (
+          <TodoItem />
+        ))}
+      </TodoList>
+      <CreateTodoButton />
+      <button>+</button>
     </div>
   );
 }
