@@ -10,6 +10,7 @@ const todos = [
   { text: 'Estudiar React', completed: false },
   { text: 'Comer', completed: false },
   { text: 'Dormir', completed: false },
+  { text: 'Trabajar', completed: false },
 ]
 
 function App() {
