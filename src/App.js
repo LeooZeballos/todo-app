@@ -4,8 +4,6 @@ import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButtom } from './CreateTodoButtom';
-// import logo from './logo.svg';
-// import './App.css';
 
 const todos = [
   { text: 'Hacer curso de React', completed: false },
