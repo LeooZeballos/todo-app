@@ -1,4 +1,9 @@
 import React from 'react';
+import { TodoCounter } from './TodoCounter';
+import { TodoSearch } from './TodoSearch';
+import { TodoList } from './TodoList';
+import { TodoItem } from './TodoItem';
+import { CreateTodoButtom } from './CreateTodoButtom';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -12,18 +17,13 @@ const todos = [
 function App() {
   return (
     <React.Fragment>
-      {/* <TodoCounter /> */}
-      <h2>Has completado 2 de 5 TODOs</h2>
-      {/* <TodoSearch /> */}
-      <input placeholder="Buscar..." />
-      {/* <TodoList>
-        {todos.map(todo => (
-          <TodoItem />
-        ))}
-      </TodoList> */}
-      {/* <CreateTodoButton /> */}
-      <button>+</button>
-    </React.Fragment>
+      <TodoCounter />
+      <TodoSearch />
+      <TodoList>
+        {todos.map(todo =>(<TodoItem key={todo.text} text={todo.text} />))}
+      </TodoList>
+      <CreateTodoButtom />
+   </React.Fragment>
   );
 }
 
