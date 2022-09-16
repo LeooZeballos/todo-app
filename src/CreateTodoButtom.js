@@ -3,7 +3,7 @@ import './CreateTodoButtom.css';
 
 function CreateTodoButtom(props){
     return(
-        <button>+</button>
+        <button class="button-31">New TODO</button>
     );
 }
 
