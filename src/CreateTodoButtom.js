@@ -1,7 +1,7 @@
 import React from "react";
 import './CreateTodoButtom.css';
 
-function CreateTodoButtom(){
+function CreateTodoButtom() {
 
     const onClickButton = (msg) => {
         alert(msg);
@@ -9,7 +9,7 @@ function CreateTodoButtom(){
 
     return(
         <button
-            className="button-31"
+            className="nuevo-todo"
             onClick={() => onClickButton("Nuevo TODO")}
         >
             Nuevo TODO +
