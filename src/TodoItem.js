@@ -21,13 +21,13 @@ function TodoItem(props) {
             <FontAwesomeIcon
                 className="checkbox"
                 icon={icon}
-                onClick={onComplete}
+                onClick={props.onComplete}
             />
             <p>{props.text}</p>
             <FontAwesomeIcon
                 className="delete"
                 icon={faXmarkCircle}
-                onClick={onDelete}
+                onClick={props.onDelete}
             />
         </li>
     );
