@@ -11,7 +11,7 @@ import React from 'react';
 
 const todos = [
   { text: 'Estudiar React', completed: false },
-  { text: 'Comer', completed: false },
+  { text: 'Comer', completed: true },
   { text: 'Dormir', completed: false },
 ]
 
@@ -23,7 +23,7 @@ function App() {
         <TodoCounter/>
         <TodoSearch/>
         <TodoList>
-          {todos.map(todo =>(<TodoItem key={todo.text} text={todo.text} />))}
+          {todos.map(todo =>(<TodoItem key={todo.text} text={todo.text} completed={todo.completed} />))}
         </TodoList>
         <CreateTodoButtom/>
       </Container>

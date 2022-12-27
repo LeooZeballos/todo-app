@@ -2,9 +2,3 @@ ul {
     list-style: none;
     padding: 0;
 }
-
-ul > li {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-}
