@@ -1,12 +1,14 @@
 import React from "react";
 import './TodoItem.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 
 function TodoItem(props){
     return(
-        <li>
-            <span>C</span>
+        <li className="todo-item">
+            <input type="checkbox" checked={props.completed} />
             <p>{props.text}</p>
-            <span>X</span>
+            <FontAwesomeIcon className="delete" icon={faXmarkCircle} />
         </li>
     );
 }
