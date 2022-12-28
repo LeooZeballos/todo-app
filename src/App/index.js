@@ -1,9 +1,9 @@
-import { WelcomeMessage } from "./WelcomeMessage";
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch";
-import { TodoList } from "./TodoList";
-import { TodoItem } from "./TodoItem";
-import { CreateTodoButtom } from "./CreateTodoButtom";
+import { WelcomeMessage } from "../WelcomeMessage";
+import { TodoCounter } from "../TodoCounter";
+import { TodoSearch } from "../TodoSearch";
+import { TodoList } from "../TodoList";
+import { TodoItem } from "../TodoItem";
+import { CreateTodoButtom } from "../CreateTodoButtom";
 
 import Container from "react-bootstrap/Container";
 
