@@ -14,6 +14,8 @@ function TodoProvider(props) {
 
   // Use State Hook to manage the state of the search input
   const [searchValue, setSearchValue] = React.useState("");
+  // Use State Hook to manage the state of the modal
+  const [openModal, setOpenModal] = React.useState(false);
   // Number of completed todos
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
 
@@ -32,6 +34,21 @@ function TodoProvider(props) {
       return todoText.includes(searchText);
     });
   }
+
+  // Function to add a todo
+  const addTodo = (text) => {
+    // Create a new todo object
+    const newTodo = {
+      text,
+      completed: false,
+    };
+    // Create a copy of the todos array
+    const newTodos = [...todos];
+    // Add the new todo to the copy of the todos array
+    newTodos.push(newTodo);
+    // Update the todos state
+    saveTodos(newTodos);
+  };
 
   // Function to toggle the completed property of a todo
   const toggleCompleteTodo = (text) => {
@@ -70,6 +87,9 @@ function TodoProvider(props) {
         searchedTodos,
         toggleCompleteTodo: toggleCompleteTodo,
         deleteTodo,
+        openModal,
+        setOpenModal,
+        addTodo,
       }}
     >
       {props.children}

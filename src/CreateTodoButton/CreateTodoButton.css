@@ -26,7 +26,6 @@
   width: 100%;
 }
 
-.nuevo-todo:hover,
-.nuevo-todo:focus {
+.nuevo-todo:hover {
   opacity: .75;
 }
