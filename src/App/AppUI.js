@@ -12,6 +12,8 @@ import { CreateTodoButtom } from "../CreateTodoButtom";
 import "./App.css";
 
 function AppUI({
+  loading,
+  error,
   todos,
   completedTodos,
   totalTodos,
@@ -23,14 +25,17 @@ function AppUI({
 }) {
   return (
     <React.Fragment>
-      <Container className="p-5 vertical-center bg-light bg-gradient card">
+      <Container className="p-5 vertical-center bg-light bg-gradient card shadow">
         <WelcomeMessage />
         <TodoCounter
           completedTodos={completedTodos}
-          totalTodos={todos.length}
+          totalTodos={totalTodos}
         />
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
         <TodoList>
+          {error && <p>Desespérate, hubo un error...</p>}
+          {loading && <p>Cargando...</p>}
+          {!loading && !todos.length && <p>¡Crea tu primer TODO!</p>}
           {searchedTodos.map((todo) => (
             <TodoItem
               key={todo.text}
