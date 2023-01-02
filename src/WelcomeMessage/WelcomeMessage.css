@@ -1,0 +1,9 @@
+.WelcomeMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+}

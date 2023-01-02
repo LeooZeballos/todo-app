@@ -29,7 +29,7 @@ function AppUI() {
 
   return (
     <React.Fragment>
-      <Container className="p-5 vertical-center bg-light bg-gradient card shadow">
+      <Container className="p-5 vertical-center bg-light bg-gradient card shadow main-container">
         <WelcomeMessage />
         <TodoCounter />
         <TodoSearch />

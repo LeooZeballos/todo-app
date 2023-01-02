@@ -1,0 +1,11 @@
+html, #root {
+    background: linear-gradient(to right, rgb(211, 181, 211), pink);
+}
+
+#root {
+    margin-top: 10px;
+}
+
+.main-container {
+    max-width: 800px;
+}
