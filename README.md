@@ -1,9 +1,9 @@
 # TODO App - ReactJS
 
-    ![GitHub](https://img.shields.io/github/license/LeooZeballos/todo-app-reactjs)
-    ![GitHub repo size](https://img.shields.io/github/repo-size/LeooZeballos/todo-app-reactjs)
-    ![GitHub last commit](https://img.shields.io/github/last-commit/LeooZeballos/todo-app-reactjs)
-    ![GitHub top language](https://img.shields.io/github/languages/top/LeooZeballos/todo-app-reactjs)
+![GitHub](https://img.shields.io/github/license/LeooZeballos/todo-app-reactjs)
+![GitHub repo size](https://img.shields.io/github/repo-size/LeooZeballos/todo-app-reactjs)
+![GitHub last commit](https://img.shields.io/github/last-commit/LeooZeballos/todo-app-reactjs)
+![GitHub top language](https://img.shields.io/github/languages/top/LeooZeballos/todo-app-reactjs)
 
 ## Table of Contents
 * [Description](#description)
