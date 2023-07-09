@@ -5,14 +5,6 @@ import { faXmarkCircle, faCheckCircle, faCircle } from "@fortawesome/free-solid-
 
 function TodoItem(props) {
 
-    const onComplete = () => {
-        alert("Completaste el TODO: " + props.text);
-    }
-
-    const onDelete = () => {
-        alert("Eliminaste el TODO: " + props.text);
-    }
-
     const icon = props.completed ? faCheckCircle : faCircle;
     const className = props.completed ? "todo-item completed" : "todo-item";
 
